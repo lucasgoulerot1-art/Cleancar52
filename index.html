@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CleanCar 52 — Nettoyage Intérieur Automobile à Domicile | Haute-Marne</title>
+<meta name="description" content="Nettoyage intérieur automobile à domicile à Bourbonne-les-Bains, Langres, Montigny-le-Roi (52). Aspiration, shampoing sièges, désodorisation. Devis gratuit, je viens chez vous.">
+<meta name="keywords" content="nettoyage voiture haute-marne, detailing intérieur automobile, nettoyage intérieur voiture domicile, bourbonne les bains, langres, montigny le roi">
+<meta property="og:title" content="CleanCar 52 — Nettoyage Intérieur Automobile à Domicile">
+<meta property="og:description" content="Nettoyage intérieur automobile premium, directement chez vous, en Haute-Marne.">
+<meta property="og:type" content="business.business">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0B0D0F;
+    --black-soft:#13161A;
+    --panel:#191D22;
+    --metal:#8A8F94;
+    --chrome:#C9CDD1;
+    --chrome-bright:#E7E9EB;
+    --accent:#C8312A;
+    --accent-bright:#E8453C;
+    --line: rgba(201,205,209,0.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--black);
+    color:var(--chrome-bright);
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.brand,.nav-link,.cta,.stat-num,.tier-name{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(11,13,15,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:1180px;margin:0 auto;
+  }
+  .brand{font-size:20px;font-weight:700;color:var(--chrome-bright);letter-spacing:0.08em;}
+  .brand span{color:var(--accent);}
+  .nav-links{display:flex;gap:32px;font-size:13px;font-weight:600;}
+  .nav-links a{color:var(--metal);transition:color .2s;position:relative;}
+  .nav-links a:hover, .nav-links a:focus-visible{color:var(--chrome-bright);}
+  .nav-cta{
+    background:var(--accent);color:#fff;padding:10px 20px;border-radius:2px;
+    font-size:12px;font-weight:700;transition:background .2s;
+  }
+  .nav-cta:hover, .nav-cta:focus-visible{background:var(--accent-bright);}
+  .burger{display:none;background:none;border:none;color:var(--chrome-bright);font-size:24px;cursor:pointer;}
+
+  @media (max-width:820px){
+    .nav-links{
+      position:fixed;top:65px;left:0;right:0;background:var(--black-soft);
+      flex-direction:column;padding:24px;gap:20px;
+      border-bottom:1px solid var(--line);
+      transform:translateY(-110%);transition:transform .3s ease;
+    }
+    .nav-links.open{transform:translateY(0);}
+    .nav-cta{display:none;}
+    .burger{display:block;}
+  }
+
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;
+    padding-top:100px;overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(ellipse 900px 600px at 80% 20%, rgba(200,49,42,0.10), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 10% 90%, rgba(138,143,148,0.08), transparent 60%);
+    z-index:0;
+  }
+  .swirl{
+    position:absolute;top:50%;right:-180px;width:720px;height:720px;
+    transform:translateY(-50%);
+    border-radius:50%;
+    background:conic-gradient(from 0deg, transparent 0deg, rgba(201,205,209,0.10) 8deg, transparent 16deg, transparent 40deg, rgba(201,205,209,0.07) 48deg, transparent 56deg, transparent 80deg, rgba(200,49,42,0.08) 88deg, transparent 96deg);
+    filter:blur(1px);
+    animation:spin 40s linear infinite;
+    z-index:0;
+  }
+  @keyframes spin{to{transform:translateY(-50%) rotate(360deg);}}
+  .hero-content{position:relative;z-index:2;max-width:680px;}
+  .eyebrow{
+    color:var(--accent-bright);font-size:13px;font-weight:600;
+    letter-spacing:0.15em;text-transform:uppercase;margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:28px;height:2px;background:var(--accent);}
+  .hero h1{
+    font-size:clamp(40px,7vw,72px);line-height:1.02;font-weight:700;
+    color:var(--chrome-bright);margin-bottom:24px;
+  }
+  .hero h1 em{
+    font-style:normal;color:transparent;
+    background:linear-gradient(120deg,var(--chrome) 0%,var(--chrome-bright) 50%,var(--metal) 100%);
+    -webkit-background-clip:text;background-clip:text;
+  }
+  .hero p.lead{
+    font-size:18px;line-height:1.6;color:var(--metal);max-width:520px;margin-bottom:36px;
+    font-weight:400;
+  }
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px;}
+  .btn-primary{
+    background:var(--accent);color:#fff;padding:16px 32px;border-radius:2px;
+    font-size:14px;font-weight:700;letter-spacing:0.04em;transition:all .25s;
+    border:1px solid var(--accent);display:inline-flex;align-items:center;gap:10px;
+  }
+  .btn-primary:hover, .btn-primary:focus-visible{background:var(--accent-bright);border-color:var(--accent-bright);transform:translateY(-1px);}
+  .btn-ghost{
+    border:1px solid var(--line);color:var(--chrome-bright);padding:16px 32px;border-radius:2px;
+    font-size:14px;font-weight:700;letter-spacing:0.04em;transition:all .25s;
+  }
+  .btn-ghost:hover, .btn-ghost:focus-visible{border-color:var(--metal);background:rgba(255,255,255,0.03);}
+  .hero-stats{display:flex;gap:40px;}
+  .stat{border-left:2px solid var(--accent);padding-left:14px;}
+  .stat-num{font-size:28px;font-weight:700;color:var(--chrome-bright);display:block;line-height:1;}
+  .stat-label{font-size:12px;color:var(--metal);margin-top:6px;letter-spacing:0.04em;}
+
+  section{padding:120px 0;position:relative;}
+  .section-head{max-width:600px;margin-bottom:64px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(30px,4vw,44px);color:var(--chrome-bright);font-weight:700;line-height:1.1;}
+  .section-head p{color:var(--metal);font-size:16px;margin-top:16px;line-height:1.6;}
+
+  .about{background:var(--black-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .about-text p{color:var(--metal);font-size:16px;line-height:1.75;margin-bottom:20px;}
+  .about-text strong{color:var(--chrome-bright);font-weight:600;}
+  .feature-list{display:flex;flex-direction:column;gap:24px;}
+  .feature{display:flex;gap:18px;padding:20px;border:1px solid var(--line);border-radius:4px;background:var(--panel);}
+  .feature-icon{
+    width:42px;height:42px;flex-shrink:0;border-radius:50%;
+    background:rgba(200,49,42,0.12);border:1px solid rgba(200,49,42,0.3);
+    display:flex;align-items:center;justify-content:center;color:var(--accent-bright);font-size:18px;
+  }
+  .feature h3{font-size:15px;color:var(--chrome-bright);font-weight:600;margin-bottom:4px;text-transform:none;letter-spacing:0;}
+  .feature p{font-size:14px;color:var(--metal);line-height:1.5;}
+
+  @media (max-width:820px){
+    .about-grid{grid-template-columns:1fr;gap:40px;}
+  }
+
+  .tiers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .tier{
+    border:1px solid var(--line);border-radius:6px;padding:36px 28px;background:var(--panel);
+    position:relative;display:flex;flex-direction:column;transition:transform .25s, border-color .25s;
+  }
+  .tier:hover{transform:translateY(-6px);border-color:var(--metal);}
+  .tier.featured{border-color:var(--accent);background:linear-gradient(180deg, rgba(200,49,42,0.08), var(--panel) 40%);}
+  .tier-badge{
+    position:absolute;top:-13px;left:28px;background:var(--accent);color:#fff;
+    font-size:11px;font-weight:700;padding:5px 12px;border-radius:2px;letter-spacing:0.06em;
+  }
+  .tier-name{font-size:13px;color:var(--metal);letter-spacing:0.12em;margin-bottom:10px;}
+  .tier.featured .tier-name{color:var(--accent-bright);}
+  .tier-title{font-size:24px;font-weight:700;color:var(--chrome-bright);margin-bottom:18px;font-family:'Oswald',sans-serif;}
+  .tier-price{display:flex;align-items:baseline;gap:6px;margin-bottom:24px;}
+  .tier-price .from{font-size:13px;color:var(--metal);}
+  .tier-price .amount{font-size:38px;font-weight:700;color:var(--chrome-bright);font-family:'Oswald',sans-serif;}
+  .tier-price .cur{font-size:18px;color:var(--metal);}
+  .tier ul{list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;flex-grow:1;}
+  .tier li{font-size:14px;color:var(--chrome);display:flex;gap:10px;line-height:1.4;}
+  .tier li::before{content:"—";color:var(--accent-bright);flex-shrink:0;}
+  .tier-cta{
+    text-align:center;padding:13px;border:1px solid var(--line);border-radius:2px;
+    font-size:13px;font-weight:700;letter-spacing:0.05em;color:var(--chrome-bright);
+    transition:all .2s;
+  }
+  .tier.featured .tier-cta{background:var(--accent);border-color:var(--accent);}
+  .tier-cta:hover, .tier-cta:focus-visible{background:rgba(255,255,255,0.06);}
+  .tier.featured .tier-cta:hover, .tier.featured .tier-cta:focus-visible{background:var(--accent-bright);}
+  .tiers-note{margin-top:28px;font-size:13px;color:var(--metal);text-align:center;}
+
+  @media (max-width:980px){
+    .tiers-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto;}
+  }
+
+  .gallery{background:var(--black-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .gallery-item{
+    aspect-ratio:1;border-radius:4px;border:1px solid var(--line);
+    background:var(--panel);overflow:hidden;position:relative;
+  }
+  .gallery-item img{
+    width:100%;height:100%;object-fit:cover;display:block;
+    filter:saturate(1.05) contrast(1.03);
+    transition:transform .4s ease;
+  }
+  .gallery-item:hover img{transform:scale(1.05);}
+  @media (max-width:820px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+
+  .zone-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center;}
+  .zone-list{display:flex;flex-wrap:wrap;gap:12px;}
+  .zone-pill{
+    border:1px solid var(--line);padding:10px 18px;border-radius:30px;font-size:13px;color:var(--chrome);
+    background:var(--panel);
+  }
+  .zone-pill.main{border-color:var(--accent);color:var(--accent-bright);font-weight:600;}
+  .zone-visual{
+    border:1px solid var(--line);border-radius:6px;background:var(--panel);
+    padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+    text-align:center;.zone-visual .big-icon{font-size:40px;}
+  .zone-visual h3{font-size:18px;color:var(--chrome-bright);font-weight:600;text-transform:none;letter-spacing:0;}
+  .zone-visual p{font-size:14px;color:var(--metal);}
+  @media (max-width:820px){.zone-grid{grid-template-columns:1fr;gap:36px;}}
+
+  .contact{background:var(--black-soft);border-top:1px solid var(--line);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;}
+  .contact-info{display:flex;flex-direction:column;gap:28px;}
+  .info-block{display:flex;gap:16px;align-items:flex-start;}
+  .info-icon{
+    width:44px;height:44px;border-radius:50%;background:var(--panel);border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--accent-bright);flex-shrink:0;
+  }
+  .info-block h3{font-size:14px;color:var(--metal);font-weight:600;text-transform:none;letter-spacing:0;margin-bottom:4px;}
+  .info-block a, .info-block p{font-size:16px;color:var(--chrome-bright);font-weight:500;}
+  .info-block a:hover{color:var(--accent-bright);}
+  .social-row{display:flex;gap:12px;margin-top:8px;}
+  .social-row a{
+    width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;font-size:15px;transition:all .2s;
+  }
+  .social-row a:hover{border-color:var(--accent);color:var(--accent-bright);background:rgba(200,49,42,0.08);}
+
+  form{display:flex;flex-direction:column;gap:18px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  label{font-size:12px;color:var(--metal);font-weight:600;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:7px;display:block;}
+  input, select, textarea{
+    width:100%;background:var(--panel);border:1px solid var(--line);border-radius:3px;
+    padding:13px 14px;color:var(--chrome-bright);font-family:'Inter',sans-serif;font-size:14px;
+    transition:border-color .2s;
+  }
+  input:focus, select:focus, textarea:focus, input:focus-visible, select:focus-visible, textarea:focus-visible{
+    outline:none;border-color:var(--accent);
+  }
+  textarea{resize:vertical;min-height:110px;}
+  .submit-btn{
+    background:var(--accent);color:#fff;padding:16px;border:none;border-radius:3px;
+    font-family:'Oswald',sans-serif;text-transform:uppercase;letter-spacing:0.05em;
+    font-size:14px;font-weight:700;cursor:pointer;transition:background .2s;margin-top:8px;
+  }
+  .submit-btn:hover, .submit-btn:focus-visible{background:var(--accent-bright);}
+  .form-note{font-size:12px;color:var(--metal);margin-top:-6px;}
+  .form-success{
+    display:none;background:rgba(200,49,42,0.08);border:1px solid var(--accent);
+    border-radius:4px;padding:16px;font-size:14px;color:var(--chrome-bright);margin-top:8px;
+  }
+  .form-error{
+    display:none;background:rgba(200,49,42,0.15);border:1px solid var(--accent-bright);
+    border-radius:4px;padding:16px;font-size:14px;color:var(--chrome-bright);margin-top:8px;
+  }
+  @media (max-width:820px){
+    .contact-grid{grid-template-columns:1fr;gap:48px;}
+    .form-row{grid-template-columns:1fr;}
+  }
+
+  footer{padding:48px 0;border-top:1px solid var(--line);}
+  .footer-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;}
+  .footer-brand{font-size:18px;font-weight:700;color:var(--chrome-bright);}
+  .footer-legal{font-size:12px;color:var(--metal);line-height:1.7;max-width:480px;}
+  .footer-legal strong{color:var(--chrome);}
+  .back-top{font-size:12px;color:var(--metal);border:1px solid var(--line);padding:10px 18px;border-radius:30px;transition:all .2s;}
+  .back-top:hover{border-color:var(--accent);color:var(--accent-bright);}
+
+  .fade-in{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease;}
+  .fade-in.visible{opacity:1;transform:translateY(0);}
+
+  ::selection{background:var(--accent);color:#fff;}
+
+  .whatsapp-float{
+    position:fixed;bottom:24px;right:24px;z-index:90;
+    width:58px;height:58px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 18px rgba(0,0,0,0.4);
+    transition:transform .2s;
+  }
+  .whatsapp-float:hover, .whatsapp-float:focus-visible{transform:scale(1.08);}
+  .whatsapp-float svg{width:30px;height:30px;}
+  @media (max-width:820px){
+    .whatsapp-float{bottom:18px;right:18px;width:52px;height:52px;}
+  }
+
+  .faq-list{display:flex;flex-direction:column;gap:14px;max-width:760px;}
+  .faq-item{border:1px solid var(--line);border-radius:6px;background:var(--panel);overflow:hidden;}
+  .faq-question{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+    color:var(--chrome-bright);font-size:16px;font-weight:600;font-family:'Inter',sans-serif;
+  }
+  .faq-question .plus{
+    flex-shrink:0;width:24px;height:24px;border:1px solid var(--line);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--accent-bright);
+    font-size:16px;transition:transform .25s;
+  }
+  .faq-item.open .faq-question .plus{transform:rotate(45deg);}
+  .faq-answer{
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+  }
+  .faq-answer p{padding:0 24px 20px;color:var(--metal);font-size:15px;line-height:1.6;}
+  .faq-item.open .faq-answer{max-height:300px;}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#top" class="brand">CLEAN<span>CAR</span> 52</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#formules">Formules</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#zone">Zone d'intervention</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Demander un devis</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <div class="swirl" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="eyebrow">Detailing automobile à domicile · Secteur Bourbonne/Langres</div>
+      <h1>Votre voiture,<br><em>comme neuve</em>,<br>sans bouger de chez vous.</h1>
+      <p class="lead">CleanCar 52 vient à vous avec du matériel professionnel pour redonner à l'intérieur de votre véhicule un état impeccable. Précision, exigence, résultat.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Demander un devis →</a>
+        <a href="tel:0670070285" class="btn-ghost">Appeler maintenant</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Formules sur mesure</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Service à domicile</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Villes principales couvertes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap about-grid">
+    <div class="fade-in">
+      <div class="section-head" style="margin-bottom:32px;">
+        <div class="eyebrow">Qui je suis</div>
+        <h2>Le détail, c'est mon métier.</h2>
+      </div>
+      <div class="about-text">
+        <p>Issu du secteur de l'hôtellerie-restauration, j'ai fait du <strong>sens du service et de l'exigence du détail</strong> mon métier. CleanCar 52, c'est une micro-entreprise de detailing automobile à domicile : je me déplace directement chez vous, avec tout le matériel nécessaire.</p>
+        <p>Chaque prestation est réalisée avec le même soin qu'on apporterait à sa propre voiture : produits professionnels, méthode rigoureuse, et un résultat qui se voit.</p>
+      </div>
+    </div>
+    <div class="feature-list fade-in">
+      <div class="feature">
+        <div class="feature-icon">🚗</div>
+        <div><h3>Service à domicile</h3><p>Je viens directement chez vous, où que vous soyez dans le secteur. Zéro contrainte de déplacement.</p></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✦</div>
+        <div><h3>Matériel professionnel</h3><p>Équipement haute performance pour un résultat qui dure dans le temps.</p></div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">⏱</div>
+        <div><h3>Sur rendez-vous</h3><p>Une prestation organisée autour de votre emploi du temps, pas l'inverse.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formules">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <div class="eyebrow">Nos prestations</div>
+      <h2>Trois formules, un seul objectif : la perfection.</h2>
+      <p>Choisissez le niveau de prestation adapté à votre véhicule et à vos besoins.</p>
+    </div>
+    <div class="tiers-grid">
+
+      <div class="tier fade-in">
+        <div class="tier-name">Formule</div>
+        <div class="tier-title">Émeraude</div>
+        <div class="tier-price"><span class="from">à partir de</span><span class="amount">50</span><span class="cur">€</span></div>
+        <ul>
+          <li>Aspiration complète habitacle + coffre</li>
+          <li>Dépoussiérage tableau de bord</li>
+          <li>Nettoyage des plastiques accessibles</li>
+          <li>Nettoyage vitres intérieures</li>
+          <li>Nettoyage seuils de porte</li>
+          <li>Désodorisant léger</li>
+        </ul>
+        <a href="#contact" class="tier-cta">Choisir Émeraude</a>
+      </div>
+
+      <div class="tier featured fade-in">
+        <div class="tier-badge">Le plus choisi</div>
+        <div class="tier-name">Formule</div>
+        <div class="tier-title">Gold</div>
+        <div class="tier-price"><span class="from">à partir de</span><span class="amount">80</span><span class="cur">€</span></div>
+        <ul>
+          <li>Toutes les prestations Émeraude</li>
+          <li>Shampoing sièges et moquettes</li>
+          <li>Traitement des plastiques (UV, anti-statique)</li>
+          <li>Nettoyage approfondi des recoins</li>
+          <li>Parfumage intérieur premium</li>
+        </ul>
+        <a href="#contact" class="tier-cta">Choisir Gold</a>
+      </div>
+
+      <div class="tier fade-in">
+        <div class="tier-name">Formule</div>
+        <div class="tier-title">Rubis</div>
+        <div class="tier-price"><span class="from">à partir de</span><span class="amount">120</span><span class="cur">€</span></div>
+        <ul>
+          <li>Toutes les prestations Gold</li>
+          <li>Traitement cuir/tissus en profondeur</li>
+          <li>Nettoyage minutieux des coffres et recoins</li>
+          <li>Détachage et traitement antibactérien</li>
+          <li>Finition intérieure premium complète</li>
+        </ul>
+        <a href="#contact" class="tier-cta">Choisir Rubis</a>
+      </div>
+
+    </div>
+    <p class="tiers-note">Tarifs indicatifs, ajustés selon l'état et la taille du véhicule. Devis gratuit avant toute intervention.</p>
+  </div>
+</section>
+
+<section class="gallery" id="galerie">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <div class="eyebrow">Réalisations</div>
+      <h2>Quelques réalisations</h2>
+      <p>Un aperçu du résultat obtenu sur des véhicules récents.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in"><img src="IMG_4193.PNG" alt="Intérieur véhicule nettoyé par CleanCar 52 - sièges et tapis"></div>
+      <div class="gallery-item fade-in"><img src="IMG_4192.PNG" alt="Habitacle complet après prestation CleanCar 52"></div>
+      <div class="gallery-item fade-in"><img src="IMG_4189.PNG" alt="Tableau de bord et volant nettoyés - CleanCar 52"></div>
+      <div class="gallery-item fade-in"><img src="IMG_4191.PNG" alt="Finition intérieure après detailing CleanCar 52"></div>
+    </div>
+  </div>
+</section>
+
+<section id="zone">
+  <div class="wrap zone-grid">
+    <div class="fade-in"><div class="fade-in">
+      <div class="section-head" style="margin-bottom:28px;">
+        <div class="eyebrow">Zone d'intervention</div>
+        <h2>J'interviens directement chez vous.</h2>
+        <p>Basé à Varennes-sur-Amance, je me déplace à votre domicile dans le secteur de Langres, Montigny-le-Roi, Bourbonne-les-Bains et leurs alentours.</p>
+      </div>
+      <div class="zone-list">
+        <span class="zone-pill main">Varennes-sur-Amance</span>
+        <span class="zone-pill">Langres</span>
+        <span class="zone-pill">Montigny-le-Roi</span>
+        <span class="zone-pill">Bourbonne-les-Bains</span>
+        <span class="zone-pill">+ alentours</span>
+      </div>
+    </div>
+    <div class="zone-visual fade-in">
+      <div class="big-icon">📍</div>
+      <h3>Hors zone ?</h3>
+      <p>Contactez-moi quand même — un déplacement peut souvent s'organiser selon la demande.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head fade-in">
+      <div class="eyebrow">Questions fréquentes</div>
+      <h2>Tout ce qu'il faut savoir.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          Combien de temps dure une prestation ?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-answer"><p>Selon la formule choisie et l'état du véhicule, comptez entre 45 minutes (Émeraude) et plus de 2h pour une formule Rubis complète.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          Avez-vous besoin d'accès à l'électricité ou à l'eau ?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-answer"><p>J'apporte mon propre matériel professionnel. Un accès à une prise électrique chez vous est nécessaire pour certains équipements.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          Comment se passe la prise de rendez-vous ?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-answer"><p>Contactez-moi par téléphone, WhatsApp ou via le formulaire. On convient ensemble d'un créneau qui vous convient, à votre domicile.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          Le devis est-il vraiment gratuit ?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-answer"><p>Oui, sans engagement. Le tarif final dépend de l'état et de la taille du véhicule, je vous le confirme avant toute intervention.</p></div>
+      </div>
+      <div class="faq-item fade-in">
+        <button class="faq-question" aria-expanded="false">
+          Faites-vous le nettoyage extérieur de la carrosserie ?
+          <span class="plus">+</span>
+        </button>
+        <div class="faq-answer"><p>Non, CleanCar 52 est spécialisé exclusivement dans le nettoyage intérieur (habitacle, sièges, plastiques, coffre). C'est ce qui me permet d'apporter un soin maximal au détail.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="fade-in">
+      <div class="section-head" style="margin-bottom:32px;">
+        <div class="eyebrow">Contact</div>
+        <h2>Demandez votre devis.</h2>
+        <p>Réponse rapide, sans engagement.</p>
+      </div>
+      <div class="contact-info">
+        <div class="info-block">
+          <div class="info-icon">📞</div>
+          <div><h3>Téléphone</h3><a href="tel:0670070285">06 70 07 02 85</a></div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">✉</div>
+          <div><h3>Email</h3><a href="mailto:cleancar52@outlook.fr">cleancar52@outlook.fr</a></div>
+        </div>
+        <div class="info-block">
+          <div class="info-icon">📍</div>
+          <div><h3>Secteur</h3><p>Bourbonne-les-Bains, Langres, Montigny-le-Roi &amp; alentours</p></div>
+        </div>
+        <div>
+          <h3 style="font-size:14px;color:var(--metal);font-weight:600;margin-bottom:10px;">Suivez CleanCar 52</h3>
+          <div class="social-row">
+            <a href="#" aria-label="Instagram" title="Instagram">📷</a>
+            <a href="#" aria-label="TikTok" title="TikTok">🎵</a>
+            <a href="#" aria-label="Facebook" title="Facebook">f</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <form id="contactForm" action="https://formspree.io/f/xrewgbjk" method="POST">
+        <div class="form-row">
+          <div>
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="vehicle">Modèle du véhicule</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Ex: Peugeot 308">
+          </div>
+          <div>
+            <label for="formule">Formule souhaitée</label>
+            <select id="formule" name="formule">
+              <option value="">À définir</option>
+              <option value="Émeraude">Émeraude — dès 50€</option>
+              <option value="Gold">Gold — dès 80€</option>
+              <option value="Rubis">Rubis — dès 120€</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Précisez votre disponibilité, l'état du véhicule, ou toute question..."></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Nouvelle demande de devis - CleanCar 52">
+        <p class="form-note">* Votre demande sera envoyée directement à CleanCar 52.</p>
+        <button type="submit" class="submit-btn">Envoyer ma demande</button>
+        <div class="form-success" id="formSuccess">Merci ! Votre demande a bien été envoyée. Je vous recontacte rapidement.</div>
+        <div class="form-error" id="formError">Une erreur est survenue. Vous pouvez aussi écrire directement à cleancar52@outlook.fr.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div>
+      <div class="footer-brand">CLEANCAR 52</div>
+      <p class="footer-legal" style="margin-top:10px;">Detailing automobile mobile — Varennes-sur-Amance (52)<br>
+      <strong>Auto-entrepreneur</strong> — SIRET : à compléter<br>
+      © 2026 CleanCar 52. Tous droits réservés.</p>
+    </div>
+    <a href="#top" class="back-top">↑ Haut de page</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/33670070285?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20nettoyage%20int%C3%A9rieur" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacter CleanCar 52 sur WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-7.93 7.94 7.88 7.88 0 0 0 1.05 3.94L4 20l4.21-1.1a7.93 7.93 0 0 0 3.84.98h.01a7.94 7.94 0 0 0 7.93-7.94 7.86 7.86 0 0 0-2.39-5.62zm-5.55 12.2h-.01a6.6 6.6 0 0 1-3.36-.92l-.24-.14-2.5.65.67-2.43-.16-.25a6.58 6.58 0 0 1-1.01-3.5 6.62 6.62 0 0 1 6.62-6.62 6.58 6.58 0 0 1 4.68 1.94 6.58 6.58 0 0 1 1.94 4.68 6.62 6.62 0 0 1-6.63 6.6zm3.63-4.95c-.2-.1-1.17-.58-1.35-.64-.18-.07-.32-.1-.45.1-.13.2-.5.64-.62.77-.11.13-.23.14-.42.05-1.16-.58-1.92-1.03-2.69-2.34-.2-.35.2-.32.58-1.07.06-.13.03-.24-.03-.34-.06-.1-.45-1.08-.62-1.48-.16-.39-.33-.34-.45-.34-.12-.01-.25-.01-.39-.01s-.36.05-.55.27c-.19.21-.73.71-.73 1.74s.75 2.02.85 2.16c.1.13 1.4 2.14 3.4 2.91 1.69.65 2.03.55 2.4.52.37-.04 1.17-.48 1.34-.94.16-.46.16-.86.11-.94-.04-.08-.16-.13-.36-.23z"/></svg>
+</a>
+
+<script>
+  const burger = document.getElementById('burger');
+  const navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const successBox = document.getElementById('formSuccess');
+    const errorBox = document.getElementById('formError');
+    const btn = form.querySelector('.submit-btn');
+
+    successBox.style.display = 'none';
+    errorBox.style.display = 'none';
+    btn.disabled = true;
+    btn.textContent = 'Envoi en cours...';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        successBox.style.display = 'block';
+        form.reset();
+      } else {
+        errorBox.style.display = 'block';
+      }
+    })
+    .catch(() => {
+      errorBox.style.display = 'block';
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btn.textContent = 'Envoyer ma demande';
+    });
+  });
+
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        if (openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-question').setAttribute('aria-expanded','false');
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+</script>
+
+</body>
+</html>
